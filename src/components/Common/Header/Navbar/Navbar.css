@@ -1,0 +1,95 @@
+/* Custom CSS to trigger dropdown on hover */
+
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    animation: slideDown 0.3s ease forwards; /* Apply the animation on hover */
+  }
+  
+  /* Add a smooth transition for dropdown appearance */
+  .navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none; /* Default state */
+    opacity: 0;
+    visibility: hidden;
+    animation: none; /* Reset the animation when not hovered */
+  }
+  
+  /* Define the animation for sliding down */
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px); /* Start slightly above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at the normal position */
+    }
+  }
+  
+  /* Image size */
+  .imageSize {
+    width: 200px;
+    height: 80px;
+  }
+  
+  /* Navbar content container */
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Make sure the container takes full width */
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    width: 100%;
+    align-items: center;
+  }
+  
+  /* Center the nav list container in the middle */
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Center the list */
+    
+  }
+  
+  /* List container styling */
+  .nav-ul {
+    background-color: #ececec; /* Background color only for the list */
+    border-radius: 15px;
+
+    padding: 5px 15px; /* Add padding around the list items */
+   
+    width: auto; /* Make the width as per the content */
+  }
+  
+  /* Navbar list items */
+  .nav-ul li {
+    margin: 0 10px;
+  }
+  
+  .nav-ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Button styling for contact button */
+  .contactButton {
+    background-color: #4258be;
+    border-radius: 15px;
+  }
+  
+  .contactButtonColor {
+    color: white !important;
+  }
+
+  .btn{
+    background-color: #4258be;
+    border-radius: 15px;
+  }
+  

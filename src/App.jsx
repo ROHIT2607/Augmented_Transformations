@@ -8,6 +8,7 @@ const App = () => {
       <Carousel/>
   )
 
+
 };
 
 export default App;
