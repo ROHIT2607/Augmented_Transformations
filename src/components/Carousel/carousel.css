@@ -1,0 +1,40 @@
+.carousel-item img {
+  height: 575px;
+  width: 100%;
+  object-fit: cover; 
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  left: 1% !important;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  color: white;
+  width: auto; 
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+  text-align: left !important; 
+  
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  margin: 0; 
+  white-space: nowrap; 
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem; 
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+

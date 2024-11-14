@@ -1,8 +1,14 @@
 import React from "react";
-import Header from "./components/Common/Header/Header";
+import Carousel from "./components/Carousel/Carousel";
+
 
 const App = () => {
-  return <Header />;
+
+  return (
+      <Carousel/>
+  )
+
+
 };
 
 export default App;
