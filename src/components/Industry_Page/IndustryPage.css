@@ -1,35 +1,61 @@
-.heading{
-    margin: 60px 0 60px 0;
 
-    padding: 0 50px 0 50px;
-}
-
-.heading p{
+/* Container for the Industry Page */
+.industry-page {
+    position: relative;
+  }
+  
+  /* Heading Section */
+  .heading {
+    margin: 60px 0;
+    padding: 0 50px;
+  }
+  
+  .heading p {
     margin: auto;
-}
-
-.head-para{
-    color: #C03F46;
+  }
+  
+  .head-para {
+    color: #c03f46;
     font-weight: 600;
     font-size: 17px;
-}
-
-.header{
+  }
+  
+  .header {
     color: black;
-}
-
-.first-head{
+  }
+  
+  .first-head {
     padding: 0;
-}
-
-.about-company-para{
-    color:  #787779;
+  }
+  
+  .about-company-para {
+    color: #787779;
     font-weight: 500;
     font-size: 17px;
-   
-}
-
-.wave-img{
+  }
+  
+  /* Wave Image */
+  .wave-img {
     width: 100%;
     height: 441px;
-}
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Cards Overlay */
+  .image-container {
+    position: relative; /* Ensures cards are placed relative to the image */
+  }
+  
+  .cards-overlay {
+    position: absolute;
+    top: 50px; /* Adjust this value to bring cards over the image */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the cards container */
+    display: flex;
+    justify-content: space-between; /* Space between the cards */
+    width: 100%; /* Controls the width of the card container */
+    gap: 20px; /* Space between individual cards */
+    z-index: 1; /* Ensures cards appear above the image */
+  }
+  

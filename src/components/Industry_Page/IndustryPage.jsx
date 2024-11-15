@@ -1,11 +1,11 @@
 import React from "react";
 import "./IndustryPage.css";
+import Card from "./Card/Card.jsx"; // Importing the Card component
 
-
- const IndustryPage = () => {
+const IndustryPage = () => {
   return (
     <>
-      <div className="industry-page">
+      <div className="industry-page ">
         <div className="heading d-flex justify-content-between">
           <div className="first-head">
             <p className="head-para">
@@ -15,19 +15,24 @@ import "./IndustryPage.css";
           </div>
           <div className="about-company-para">
             <p>
-              We specialize in delivering innocative AI-driven solutions across
+              We specialize in delivering innovative AI-driven solutions across
               a wide range
             </p>
             <p>
-              of technologies, empowring businesses to unlock new potential and
+              of technologies, empowering businesses to unlock new potential and
               drive
             </p>
-            <p>transformation. Our experties includes.</p>
+            <p>transformation. Our expertise includes.</p>
           </div>
         </div>
-        <div>
-            <img src="/Wave.png" className="wave-img"/>
-       
+
+        {/* Positioned Image */}
+        <div className="image-container">
+          <img src="/Wave.png" className="wave-img" alt="Wave" />
+          {/* Cards Positioned on Top of the Image */}
+          <div className="cards-overlay">
+            <Card />
+          </div>
         </div>
       </div>
     </>
