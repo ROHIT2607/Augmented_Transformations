@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const Single_Card = () => {
+ const Single_Card = () => {
   return (
     <>
       
     </>
   )
 }
+

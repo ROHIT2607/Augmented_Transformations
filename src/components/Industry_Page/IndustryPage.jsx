@@ -1,8 +1,8 @@
 import React from "react";
 import "./IndustryPage.css";
-import  SingleCard  from "./Card/Single_Card/Single_Card";
 
-export const IndustryPage = () => {
+
+ const IndustryPage = () => {
   return (
     <>
       <div className="industry-page">
@@ -27,9 +27,11 @@ export const IndustryPage = () => {
         </div>
         <div>
             <img src="/Wave.png" className="wave-img"/>
-            <Single_Card/>
+       
         </div>
       </div>
     </>
   );
 };
+
+export default IndustryPage;
