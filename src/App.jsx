@@ -1,12 +1,14 @@
 import React from "react";
-import Carousel from "./components/Carousel/Carousel";
 import Header from "./components/Common/Header/Header";
+import Carousel from "./components/Carousel/Carousel";
+import IndustryPage from "./components/Industry_Page/IndustryPage";
 
 const App = () => {
   return (
     <>
       <Header />
       <Carousel />
+      <IndustryPage />
     </>
   );
 };

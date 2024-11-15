@@ -19,7 +19,7 @@ const Navbar = () => {
           </button>
 
           <div className="navbar-content">
-            <img src="\public\ATLogo.jpg" className="imageSize" />
+            <img src="/ATLogo.jpg" className="imageSize" />
 
             <div
               className="nav-mid collapse navbar-collapse justify-content-center"
