@@ -54,4 +54,12 @@
   }
   
 
+  /* ButtonStyles.css */
+.custom-gradient-text {
+    padding-left: 30px;  /* Adds 5px space from the left */
+    word-spacing: 2px;  /* Adds 2px word spacing */
+    background: linear-gradient(270.02deg, #DAE5FB 17.61%, #407BFF 99.97%);
+    -webkit-background-clip: text;
+    color: transparent;  /* This makes the gradient apply to the text */
+  }
   

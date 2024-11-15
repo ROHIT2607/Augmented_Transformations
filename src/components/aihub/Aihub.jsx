@@ -7,17 +7,14 @@ const AIHubSection = () => {
     <Container fluid className="py-3">
       <Row className="align-items-center g-0">
       <h3 className="text-primary custom-gradient-text">
-        Transform your vision into reality with our innovative projects <br />
-        that redefine success and set new industry standards.
-       </h3>
-
-
-
+      Transform your vision into reality with our innovative projects <br />
+      that redefine success and set new industry standards.
+    </h3>
 
         {/* Left Image */}
         <Col md={6} className="p-0">
           <img
-            src="public/ai-cloud-concept-with-robot-hand 1 (1).png" // Replace with your image path
+            src="public/ai-cloud-concept-with-robot-hand 1 (1).png"
             alt="AI-Hub"
             className="img-fluid"
             style={{ height: '100%', width: '100%', objectFit: 'cover', marginLeft: '-15px' }}
