@@ -1,0 +1,65 @@
+.text-primary {
+    color: #007bff; /* Adjust the color based on your theme */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li::before {
+    display: none;
+  }
+  .custom-heading {
+    width: 1292px;
+    height: 120px;
+    top: 2017px;
+    left: 74px;
+    gap: 0px;
+    opacity: 0.8;
+    color: linear-gradient(91.26deg, #0EE2F6 1.89%, #183BDE 72.39%);
+    /* position: absolute; */
+  }
+
+  .custom-list li {
+    margin-bottom: 15px; /* Adjust the margin as needed */
+  }
+/* ButtonStyles.css */
+.gradient-button {
+    background: linear-gradient(270.02deg, #DAE5FB 17.61%, #407BFF 99.97%);
+    border: none;
+    padding: 10px 20px 10px 35px;
+    border-radius: 30px;  /* Make the button rounded */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;  /* Align text and the circle */
+    transition: background 0.3s ease;
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(270.02deg, #407BFF 17.61%, #DAE5FB 99.97%);
+  }
+  
+  .gradient-button .button-icon {
+    width: 30px;  /* Adjust size of the circle */
+    height: 30px;
+    background-color: white;  /* White background for the circle */
+    border-radius: 50%;  /* Make the element a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;  /* Space between the text and the circle */
+  }
+  
+
+  /* ButtonStyles.css */
+.custom-gradient-text {
+    padding-left: 30px;  /* Adds 5px space from the left */
+    word-spacing: 2px;  /* Adds 2px word spacing */
+    background: linear-gradient(270.02deg, #DAE5FB 17.61%, #407BFF 99.97%);
+    -webkit-background-clip: text;
+    color: transparent;  /* This makes the gradient apply to the text */
+  }
+  
