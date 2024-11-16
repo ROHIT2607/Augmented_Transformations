@@ -40,29 +40,99 @@
     font-weight: 600;
 }
 
+.vision-para p{
+    font-size: 20px;
+}
+
 .vision-head-para{
     position: absolute;
     top: 45%;
     left: 17%;
     color: white;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
+}
+
+.vision-card-1-main{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    top: 25%;
+    left: 75%;
+    font-size: 20px;
+    color: white;
+    background-color: #5F2DEE;
+    border-radius: 20px;
+    padding: 20px 0 0 0;
 }
 
 .vision-card-1{
-    height: 100px;
-    width: 150px;
-    background-color: #5F2DEE;
-    position: absolute;
-    top: 32%;
-    left: 65%;
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .vision-card-1-img{
-    width: 35px;
-    margin: 15px 0 0 20px;
+    height: 43px;
+    width: 50px;
+    margin: 10px 10px 0 0;
+}
+
+.vision-card-1-para{
+    margin: 10px 0 0 0;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.vision-card-1-para-2{
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+
+
+.vision-card-2-main{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    top: 55%;
+    left: 75%;
+    font-size: 20px;
+    color: white;
+    background-color: #B1BFFF;
+    border-radius: 20px;
+    padding: 20px 0 0 0;
+}
+
+.vision-card-2{
+    display: flex;
+    justify-content: center;
+
+}
+
+.vision-card-2-img{
+    height: 46px;
+    width: 38px;
+    margin: 10px 10px 0 0;
+}
+
+.vision-card-2-para{
+    margin: 10px 0 0 0;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.vision-card-2-para-2{
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
 }

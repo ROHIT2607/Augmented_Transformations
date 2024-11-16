@@ -60,11 +60,9 @@
   /* List container styling */
   .nav-ul {
     background-color: #ececec; /* Background color only for the list */
-    border-radius: 15px;
-
-    padding: 5px 15px; /* Add padding around the list items */
-   
-    width: auto; /* Make the width as per the content */
+    border-radius: 50px;
+   padding-top: 5px;
+   padding-bottom: 5px;
   }
   
   /* Navbar list items */
@@ -80,8 +78,8 @@
   
   /* Button styling for contact button */
   .contactButton {
-    background-color: #4258be;
-    border-radius: 15px;
+    background-color: #7fb5fb;
+    border-radius: 50px;
   }
   
   .contactButtonColor {
@@ -90,6 +88,6 @@
 
   .btn{
     background-color: #4258be;
-    border-radius: 15px;
+    border-radius: 50px !important;
   }
   
