@@ -24,7 +24,7 @@ const AIHubSection = () => {
         {/* Right Content */}
         <Col md={6} className="px-4">
           <h2 className="mt-4 mb-4">AI-Hub</h2>
-          <p className='mb-4' style={{ textAlign: 'justify',marginRight: '110px' }}>
+          <p className='mb-4' style={{ textAlign: 'justify',marginRight: '50px' }}>
             AI-Hub is a robust platform designed for container orchestration in
             GPU-enabled environments. It seamlessly handles multi-node
             operations and accommodates various AI/ML frameworks, ensuring
