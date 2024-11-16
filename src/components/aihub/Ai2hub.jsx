@@ -42,7 +42,7 @@ const AIHubSection = () => {
         {/* Right Content */}
         <Col md={6} className="px-4">
           <h2 className="mt-4 mb-4">Internet of Things (IoT)</h2>
-          <p className="mb-4" style={{ textAlign: "justify", marginRight: "110px" }}>
+          <p className="mb-4" style={{ textAlign: "justify", marginRight: '50px' }}>
             The internet of things helps people live and work smarter, as well
             as gain complete control over their lives. In addition to offering
             smart devices to automate homes, IoT is essential to business.

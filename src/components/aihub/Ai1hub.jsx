@@ -11,7 +11,7 @@ const AIHubSection = () => {
           <h2 className="mt-4 mb-4">Video Analytics Solution (VAS)</h2>
           <p
             className="mb-4"
-            style={{ textAlign: "justify", marginRight: "110px" }}
+            style={{ textAlign: "justify", marginRight: '70px'}}
           >
             Our state-of-the-art Video Analytics Solution is designed to
             leverage the power of artificial intelligence and computer vision to
@@ -66,7 +66,7 @@ const AIHubSection = () => {
             className="img-fluid"
             style={{
               height: "80%",
-              width: "80%",
+              width: "90%",
               objectFit: "cover",
               marginTop: "40px",
             }}
