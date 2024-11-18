@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <footer
       style={{
-        // backgroundColor: '#1a1a2e',
-        backgroundImage: 'url(/Footer.jpg)', // Replace with your image URL
+        backgroundImage: 'url(/Footer.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: '#fff',

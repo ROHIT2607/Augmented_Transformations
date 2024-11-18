@@ -31,7 +31,7 @@ const AIHubSection = () => {
                 borderRadius: "20px",
                 color: "white",
                 fontSize: "12px",
-                marginRight:"100px"
+                marginRight:"80px"
               }}
             >
              <span> Logo Box</span>
