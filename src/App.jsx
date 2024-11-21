@@ -7,19 +7,19 @@ import Aihub from "./components/aihub/Aihub";
 import AIHubSection from "./components/aihub/Ai1hub";
 import AI1HubSection from "./components/aihub/Ai2hub";
 import Ourwork from "./components/ourWork/ourWork";
-
+import Projects from "./components/projects/Projects";
 const App = () => {
   return (
     <>
-    
       <Header />
       <Carousel />
       <IndustryPage />
       <Aihub />
-      <AIHubSection/>
-      <AI1HubSection/>
-       <VisionPage />
-      <Ourwork/>
+      <AIHubSection />
+      <AI1HubSection />
+      <VisionPage />
+      <Ourwork />
+      <Projects />
     </>
   );
 };
