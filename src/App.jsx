@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./components/Common/Header/Header";
-import Carousel from "./components/Carousel/Carousel";
 import IndustryPage from "./components/Industry_Page/IndustryPage";
 import VisionPage from "./components/VisionPage/VisionPage";
 import Aihub from "./components/aihub/Aihub";
@@ -9,15 +8,14 @@ import AI1HubSection from "./components/aihub/Ai2hub";
 import Ourwork from "./components/ourWork/ourWork";
 
 import Projects from "./components/projects/Projects";
-
 import Footer from "./components/Footer/Footer";
 import SmartMetering from "./components/aihub/Smartmetering";
-n
+
 const App = () => {
   return (
     <>
       <Header />
-      <Carousel />
+      {/* <CarAnimate/> */}
       <IndustryPage />
       <Aihub />
       <AIHubSection/>
