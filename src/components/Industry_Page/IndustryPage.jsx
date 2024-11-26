@@ -11,24 +11,20 @@ const IndustryPage = () => {
             <p className="head-para">
               - Driving Excellence Across Diverse Sectors
             </p>
-            <h1 className="header">Industries We Cover</h1>
+            <h1 className="header">Our Core Competencies</h1>
           </div>
           <div className="about-company-para">
-            <p>
+            <p className="company-para">
               We specialize in delivering innovative AI-driven solutions across
-              a wide range
+              a wide range of technologies, empowering businesses to unlock new
+              potential and drive transformation. Our expertise includes:
             </p>
-            <p>
-              of technologies, empowering businesses to unlock new potential and
-              drive
-            </p>
-            <p>transformation. Our expertise includes.</p>
           </div>
         </div>
 
         {/* Positioned Image */}
         <div className="image-container">
-          <img src="/Wave.png" className="wave-img" alt="Wave" />
+
           {/* Cards Positioned on Top of the Image */}
           <div className="cards-overlay">
             <Card />

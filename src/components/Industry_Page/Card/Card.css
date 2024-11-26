@@ -1,0 +1,25 @@
+/* Card List Layout */
+.card-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    justify-content: space-between; /* Adds space between cards */
+    gap: 20px; /* Adds gap between each card */
+    padding: 20px; /* Optional: add padding around the card list */
+  }
+
+  /* Card Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-container {
+  animation: slideIn 0.5s ease-out;
+  animation-fill-mode: forwards;
+}

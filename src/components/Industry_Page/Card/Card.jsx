@@ -52,6 +52,9 @@ const CardList = () => {
           imageSrc={card.imageSrc}
           title={card.title}
           description={card.description}
+          style={{
+            animationDelay: `${index * 0.2}s`, // Adjust delay between cards
+          }}
         />
       ))}
     </div>

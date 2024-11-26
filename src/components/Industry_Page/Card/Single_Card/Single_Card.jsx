@@ -1,13 +1,18 @@
 import React from "react";
 import "./Single_Card.css";
 
-const Single_Card = ({ imageSrc, title, description }) => {
+const Single_Card = ({ imageSrc, title, description, style }) => {
   return (
-    <div className="card-container">
+    <div className="card-container" style={style}>
       <div className="box">
-        <img src={imageSrc} alt="Card Top" className="card-image" />
-        <h3 className="card-h3">{title}</h3>
-        <p className="card-p">{description}</p>
+        <div className="box-content">
+          <img src={imageSrc} alt="Card Top" className="card-image" />
+          <img src="line.png" alt="" className="line-img" />
+          <div className="card-data">
+            <h3 className="card-h3">{title}</h3>
+            <p className="card-p">{description}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

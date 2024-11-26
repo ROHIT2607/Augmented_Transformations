@@ -12,22 +12,22 @@ import Projects from "./components/projects/Projects";
 
 import Footer from "./components/Footer/Footer";
 import SmartMetering from "./components/aihub/Smartmetering";
-n
+import CustomerPage from "./components/CutomerPage/CustomerPage";
 const App = () => {
   return (
     <>
       <Header />
       <Carousel />
       <IndustryPage />
-      <Aihub />
+      <CustomerPage />
+      {/* <Aihub />
       <AIHubSection/>
       <AI1HubSection/>
        <VisionPage />
       <Ourwork/>
       <SmartMetering/>
      <Projects />
-      <Footer />
-
+      <Footer /> */}
     </>
   );
 };
