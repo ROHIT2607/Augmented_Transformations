@@ -1,70 +1,51 @@
-/* Card List Layout */
-.card-list {
-    display: flex;
-    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
-    justify-content: space-between; /* Adds space between cards */
-    gap: 20px; /* Adds gap between each card */
-    padding: 20px; /* Optional: add padding around the card list */
-  }
-  
-  /* Card Container */
-  .card-container {
-    position: relative;
-    margin: 0; /* Removed margin, as we are using flexbox for spacing */
-  }
-  
-  /* Box Styles */
-  .box {
-    position: relative;
-    height: 244px;
-    width: 200px;
-    border: 1px solid black;
-    background-color: #252525;
-    overflow: visible;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  }
 
-  .box:hover {
-    transform: scale(1.1); /* Slightly enlarges the box */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Adds shadow for a popup effect */
-    filter: blur(0) !;
-  }
-  
-  /* Card Image Styles */
-  .card-image {
-    position: absolute; /* Position the image relative to the .box */
-    top: -45px; /* Moves the image upward to make it half outside the box */
-    left: 50%; /* Centers the image horizontally within the .box */
-    transform: translateX(-50%); /* Correct horizontal centering */
-    height: 90px; /* Adjust height */
-    width: 90px; /* Adjust width to maintain aspect ratio */
-    z-index: 1; /* Ensures the image is above the box background */
-  }
-  
-  /* Heading Styles */
-  .card-h3 {
-    margin-top: 15px; /* Adjust space between the image and the heading */
-    font-size: 20px;
-    color: white; /* Heading color */
-    width: 100%; /* Ensure the heading takes up the full width of the box */
-    text-align: center; /* Center align all headings */
-  }
-  
-  /* Paragraph Styles */
- .card-p {
-    padding: 10px 5px 0 5px; /* Adjust paragraph margins */
-    text-align: justify; /* Justifies paragraph text */
-    font-size: 14px; /* Adjust font size as needed */
-    color: #BEBEBE; /* Paragraph color */
-    width: 100%; /* Ensure the paragraph takes up the full width of the box */
-  }
+.box{
+  height: 130px;
+  width: 420px;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-content{
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
 
 
-  
+.card-image{
+  height: 60px;
+  width: 70px;
+  filter: brightness(1.2) contrast(1.5); /* Adjust values for brightness and contrast */
+  padding: 5px;
+  margin: 15px;
+}
+
+.line-img{
+  height: 90px;
+  width: 7px;
+
+}
+
+.card-data{
+ padding: 25px;
+ display: flex;
+ flex-direction: column;
+ gap: 20px; /* Space between items */
+}
+
+.card-h3{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-p{
+  text-align: justify;
+  color: #8D8A8A;
+font-size: 13px;
+margin: 0;
+}
+

@@ -10,16 +10,17 @@ import Ourwork from "./components/ourWork/ourWork";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer/Footer";
 import SmartMetering from "./components/aihub/Smartmetering";
-
+import CustomerPage from "./components/CutomerPage/CustomerPage";
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <Header />
+              <Carousel />
               <IndustryPage />
               <Aihub />
               <AIHubSection />
@@ -28,13 +29,14 @@ const App = () => {
               <Ourwork />
               <SmartMetering />
               <Projects />
+            <CustomerPage />
             </>
           }
         />
-        {/* <Route path="/industry" element={} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
+
   );
 };
 

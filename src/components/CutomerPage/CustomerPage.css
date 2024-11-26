@@ -1,0 +1,28 @@
+.customer-page {
+    width: 100%;
+    height: 642px; /* Ensure it matches the height of the image */
+    position: relative;
+}
+
+.customer-img {
+    width: 100%;
+    height: 100%; /* Cover the parent container */
+    object-fit: cover; /* Ensure the image scales properly */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Place the image below the content */
+}
+
+.customer-cards-container {
+    position: absolute;
+    top: 60%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure it's above the image */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
