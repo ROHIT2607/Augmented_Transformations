@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css"; // Import custom CSS for hover effect
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -102,9 +103,12 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="nav-item contactButton ">
-                  <a href="#" className="nav-link contactButtonColor">
+                  {/* <a href="#" className="nav-link contactButtonColor">
                     Contact Us
-                  </a>
+                  </a> */}
+                  <Link to="/contact" className="nav-link contactButtonColor">
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
