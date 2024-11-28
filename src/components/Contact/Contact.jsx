@@ -16,9 +16,6 @@ const ContactUs = () => {
         <Col
           md={6}
           className="p-5 d-flex flex-column justify-content-center h-100"
-          style={{
-            borderRight: "2px solid #ffffff", // Optional: Add a separator line
-          }}
         >
           <div
             style={{
