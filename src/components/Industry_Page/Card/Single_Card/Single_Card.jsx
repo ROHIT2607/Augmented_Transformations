@@ -1,6 +1,6 @@
 import React from "react";
 import "./Single_Card.css";
-
+import { motion } from "motion/react";
 const Single_Card = ({ imageSrc, title, description, style }) => {
   return (
     <div className="card-container" style={style}>

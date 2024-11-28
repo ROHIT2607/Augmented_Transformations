@@ -12,6 +12,7 @@ import Footer from "./components/Footer/Footer";
 import SmartMetering from "./components/aihub/Smartmetering";
 import CustomerPage from "./components/CutomerPage/CustomerPage";
 import ContactUs from "./components/Contact/Contact";
+import Carousel_two from "./components/Carousel_2/Carousel_two";
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,7 +22,7 @@ const App = () => {
           element={
             <>
               <Header />
-
+              <Carousel_two />
               <IndustryPage />
               <Aihub />
               <AIHubSection />
@@ -33,9 +34,8 @@ const App = () => {
               <CustomerPage />
             </>
           }
-    
         />
-        <Route path="/contact" element={<ContactUs/>} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </BrowserRouter>
