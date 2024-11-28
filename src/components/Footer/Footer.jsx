@@ -144,8 +144,8 @@ const Footer = () => {
                   variant="primary"
                   style={{
                     backgroundColor: "#4e69db",
-                    border: "none",
                     fontWeight: "300", // Light font weight for button icon if needed
+                    borderRadius: "10px 10px 10px 0",
                   }}
                 >
                   <i className="fa fa-paper-plane" />
