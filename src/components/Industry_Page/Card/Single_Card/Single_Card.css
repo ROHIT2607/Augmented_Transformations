@@ -1,5 +1,5 @@
-
-.box{
+/* Default Styles */
+.box {
   height: 130px;
   width: 420px;
   display: flex;
@@ -8,14 +8,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.box-content{
+.box-content {
   display: flex;
   padding: 15px;
   align-items: center;
 }
 
-
-.card-image{
+.card-image {
   height: 60px;
   width: 70px;
   filter: brightness(1.2) contrast(1.5); /* Adjust values for brightness and contrast */
@@ -23,29 +22,107 @@
   margin: 15px;
 }
 
-.line-img{
+.line-img {
   height: 90px;
   width: 7px;
-
 }
 
-.card-data{
- padding: 25px;
- display: flex;
- flex-direction: column;
- gap: 20px; /* Space between items */
+.card-data {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between items */
 }
 
-.card-h3{
+.card-h3 {
   font-size: 25px;
   font-weight: bold;
   margin: 0;
 }
 
-.card-p{
+.card-p {
   text-align: justify;
   color: #8D8A8A;
-font-size: 13px;
-margin: 0;
+  font-size: 13px;
+  margin: 0;
 }
 
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .box {
+    width: 100%;  /* Make card width 100% on small screens */
+    flex-direction: column; /* Stack image and text vertically */
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .box-content {
+    /* flex-direction: column; Align elements vertically */
+    padding: 10px;
+    align-items: center;
+  }
+
+  .card-image {
+    height: 50px; /* Adjust image size */
+    width: 60px;
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .line-img {
+    height: 50px; /* Adjust line height for mobile */
+    width: 5px;
+    margin-bottom: 10px; /* Space below the line */
+  }
+
+  .card-data {
+    padding: 15px;
+    gap: 10px; /* Adjust space between title and description */
+  }
+
+  .card-h3 {
+    font-size: 20px; /* Adjust heading font size */
+  }
+
+  .card-p {
+    font-size: 12px; /* Adjust paragraph font size */
+  }
+}
+
+/* Tablet (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .box {
+    width: 100%;  /* Make card width 100% on medium screens */
+    flex-direction: column; /* Stack image and text vertically */
+    height: auto; /* Adjust height */
+  }
+
+  .box-content {
+    /* flex-direction: column; */
+    padding: 15px;
+    align-items: center;
+  }
+
+  .card-image {
+    height: 55px; /* Adjust image size for tablet */
+    width: 65px;
+    margin: 10px 0;
+  }
+
+  .line-img {
+    height: 70px; /* Adjust line height for tablet */
+    width: 6px;
+    margin-bottom: 10px;
+  }
+
+  .card-data {
+    padding: 20px;
+    gap: 15px; /* Adjust space between title and description */
+  }
+
+  .card-h3 {
+    font-size: 22px; /* Adjust heading font size */
+  }
+
+  .card-p {
+    font-size: 13px; /* Adjust paragraph font size */
+  }
+}

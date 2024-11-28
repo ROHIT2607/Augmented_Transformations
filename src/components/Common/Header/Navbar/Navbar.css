@@ -1,4 +1,18 @@
-/* Custom CSS to trigger dropdown on hover */
+@media (max-width: 991.98px) { /* Mobile and tablet view (up to medium screens) */
+  .nav-ul {
+    background-color: white !important; /* Override default background */
+    border-radius: 0 !important; /* Remove border radius */
+    margin: 5px 0 !important; /* Add margin to the list */
+    padding: 0 !important; /* Remove padding */
+    display: flex; /* Display the list items in a row */
+   justify-content: center; /* Center the list items */
+  }
+
+  .contactButton {
+    background-color: white !important; /* Override default background */
+    border-radius: 0 !important; /* Remove border radius */
+  }
+}
 
 
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {

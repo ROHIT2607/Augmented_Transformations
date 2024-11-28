@@ -1,52 +1,127 @@
-
 /* Container for the Industry Page */
 .industry-page {
-    position: relative;
-    background-color: #ECECEC;
-    padding-bottom: 80px;
-  }
-  
-  /* Heading Section */
+  position: relative;
+  background-color: #ECECEC;
+  padding-bottom: 80px;
+}
+
+/* Heading Section */
+.heading {
+  padding: 80px 50px;
+}
+
+.heading p {
+  margin: auto;
+}
+
+.head-para {
+  color: #C03F46;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.header {
+  background: linear-gradient(to right, #0EE2F6, #5FA4FE); /* Define gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+  background-clip: text; /* Standard background clip (for compatibility) */
+  color: transparent; /* Set text color to transparent */
+}
+
+.company-para {
+  text-align: justify;
+}
+
+.first-head {
+  padding: 0;
+}
+
+.about-company-para {
+  height: 80px;
+  width: 600px;
+  color: #787779;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
   .heading {
-    padding: 80px 50px;
+    padding: 40px 20px; /* Reduce padding on mobile */
+    display: flex; /* Display flex for better alignment */
+    flex-direction: column; /* Align items in a column */
+    justify-content: center; /* Center content */
   }
-  
-  .heading p {
-    margin: auto;
+
+  .industry-page {
+    padding-bottom: 0;
   }
-  
+
   .head-para {
-    color: #C03F46;
-    font-weight: 600;
-    font-size: 17px;
-  }
+    font-size: 14px; /* Adjust font size */
   
+  }
+
   .header {
-    background: linear-gradient(to right, #0EE2F6, #5FA4FE); /* Define gradient colors */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
-    background-clip: text; /* Standard background clip (for compatibility) */
-    color: transparent; /* Set text color to transparent */
+    font-size: 24px; /* Adjust header font size */
+   
   }
-  
-  .company-para{
-    text-align: justify;
+
+  .company-para {
+    font-size: 14px; /* Adjust paragraph font size */
+    width: 100%; /* Make sure the paragraph fits the screen */
+    text-align: justify; /* Justify text for better readability */
   }
-  .first-head {
-    padding: 0;
-  }
-  
+
   .about-company-para {
-    height: 80px;
-    width: 600px;
-
-    color: #787779;
-    font-weight: 500;
-    font-size: 17px;
+    width: 100%; /* Adjust width to 100% on mobile */
+    font-size: 14px; /* Adjust font size */
   }
-  
+
+
+
+  .cards-overlay {
+    /* Adjust positioning of the cards for mobile */
+    position: relative;
+    top: -40px; /* Adjust top positioning for better card visibility */
+  }
+}
+
+/* Tablet (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .heading {
+    padding: 60px 30px; /* Reduce padding on tablet */
+  }
 
   
 
-  
-  
+  .head-para {
+    font-size: 15px; /* Adjust font size for tablet */
+  }
+
+  .header {
+    font-size: 26px; /* Adjust header font size for tablet */
+  }
+
+  .company-para {
+    font-size: 15px; /* Adjust paragraph font size */
+    width: 90%; /* Adjust width */
+  }
+
+  .about-company-para {
+    width: 90%; /* Adjust width on tablet */
+    font-size: 15px; /* Adjust font size */
+  }
+
+
+
+  .cards-overlay {
+    position: relative;
+    top: -30px; /* Adjust cards' position */
+  }
+}
+
+/* Desktop (900px and above) */
+@media (min-width: 901px) {
+  /* Maintain default desktop styles (as provided) */
+}
