@@ -1,6 +1,6 @@
 import React from "react";
-import "./Navbar.css"; // Import custom CSS for hover effect
 import { Link } from "react-router-dom";
+import "./Navbar.css"; // Import custom CSS for styling (if needed)
 
 const Navbar = () => {
   return (
@@ -19,15 +19,14 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="navbar-content">
-            <img src="/ATLogo.jpg" className="imageSize" />
+          <div className="navbar-content d-flex justify-content-between w-100">
+            <img src="/ATLogo.jpg" className="imageSize d-none d-md-block" alt="Logo" />
 
             <div
-              className="nav-mid collapse navbar-collapse justify-content-center"
+              className="collapse navbar-collapse justify-content-center"
               id="navbarNavDropdown"
             >
               <ul className="navbar-nav nav-ul fw-medium">
-                {/* Standard list items */}
                 <li className="nav-item">
                   <a className="nav-link" aria-current="page" href="#">
                     About Us
@@ -41,6 +40,7 @@ const Navbar = () => {
                     href="#"
                     role="button"
                     aria-expanded="false"
+                    data-bs-toggle="dropdown"
                   >
                     Products
                   </a>
@@ -70,6 +70,7 @@ const Navbar = () => {
                     href="#"
                     role="button"
                     aria-expanded="false"
+                    data-bs-toggle="dropdown"
                   >
                     Services
                   </a>
@@ -103,18 +104,11 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="nav-item contactButton ">
-                  {/* <a href="#" className="nav-link contactButtonColor">
-                    Contact Us
-                  </a> */}
-                  <Link to="/contact" className="nav-link contactButtonColor">
+                  <Link to="/contact" className="nav-link">
                     Contact Us
                   </Link>
                 </li>
               </ul>
-            </div>
-
-            <div className="nav-right">
-              <button className="btn btn-primary">Login</button>
             </div>
           </div>
         </div>
