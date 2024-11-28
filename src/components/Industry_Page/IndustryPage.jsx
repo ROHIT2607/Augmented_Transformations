@@ -1,11 +1,14 @@
 import React from "react";
 import "./IndustryPage.css";
-import Card from "./Card/Card.jsx"; // Importing the Card component
-
+import CardList from "./Card/Card";
+import { motion } from "motion/react";
 const IndustryPage = () => {
   return (
-    <>
-      <div className="industry-page ">
+    <div>
+      <motion.div className="industry-page" 
+        whileHover={{ backgroundColor: "#000000" }}
+      >
+        <img src="/wave.png" alt="" />
         <div className="heading d-flex justify-content-between">
           <div className="first-head">
             <p className="head-para">
@@ -24,14 +27,13 @@ const IndustryPage = () => {
 
         {/* Positioned Image */}
         <div className="image-container">
-
           {/* Cards Positioned on Top of the Image */}
           <div className="cards-overlay">
-            <Card />
+            <CardList />
           </div>
         </div>
-      </div>
-    </>
+      </motion.div>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import "./Navbar.css"; // Import custom CSS for styling (if needed)
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg sticky-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler"

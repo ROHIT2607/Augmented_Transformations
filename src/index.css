@@ -5,3 +5,8 @@
     font: Poppins;
 }
 
+body {
+    overflow-x: hidden;
+  }
+  
+

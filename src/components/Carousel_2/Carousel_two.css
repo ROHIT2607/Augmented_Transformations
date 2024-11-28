@@ -1,0 +1,120 @@
+.carousel-main-container {
+    width: 100%;
+    height: 545px;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Horizontally center child */
+    align-items: center; /* Vertically center child */
+    position: relative;
+}
+
+.carousel-inner-container {
+    width: 90%;
+    height: 95%;
+    background-color: black;
+    border-radius: 25px;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column;
+    justify-content: center; /* Horizontally center child */
+    align-items: center; /* Vertically center child */
+    
+}
+
+.carousel-header{
+    color: white;
+    z-index: 2;
+
+}
+.blue-text{
+    color: #7FB5FB;
+}
+
+.carousel-para{
+    width: 85%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.carousel-para p{
+    margin: 0;
+}
+
+.p-underline {
+    text-decoration: underline;
+    text-decoration-color: #7FB5FB; /* Set underline color */
+    text-decoration-thickness: 3px; /* Adjust the thickness of the underline */
+    text-underline-offset: 13px; /* Add space between text and underline */
+}
+
+.a1{
+    position: absolute;
+    left: 180px;
+    top: 220px;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    opacity: 0.7;
+
+}
+
+.a2{
+    position: absolute;
+    left: 410px;
+    top: 400px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.b1{
+    position: absolute;
+    right: 280px;
+    top: 270px;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.b2{
+    position: absolute;
+    right: 150px;
+    top: 350px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.c1{
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.c2{
+    position: absolute;
+    left: 500px;
+    top: 120px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.d1
+{
+    position: absolute;
+    right: 300px;
+    top: 60px;
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    opacity: 0.7;
+}

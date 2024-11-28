@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Card from "./Single_Card/Single_Card";
 import "./Card.css";
+import { motion, useInView } from "motion/react";
 
 const cardData = [
   {
@@ -35,29 +36,44 @@ const cardData = [
   },
   {
     imageSrc: "/iot.png",
-    title: "IOT",
+    title: "IoT",
     description:
       "Delivering IoT solutions that seamlessly connect devices, providing real-time data and driving operational efficiency.",
   },
-
-  // Add more cards as needed
 ];
 
 const CardList = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { threshold: 0.1 }); // Trigger when 10% of the section is visible
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // Trigger animation only once when it comes into view
+  if (isInView && !hasAnimated) {
+    setHasAnimated(true);
+  }
+
   return (
-    <div className="card-list">
+    <motion.div className="card-list" ref={ref}>
       {cardData.map((card, index) => (
-        <Card
+        <motion.div
           key={index}
-          imageSrc={card.imageSrc}
-          title={card.title}
-          description={card.description}
-          style={{
-            animationDelay: `${index * 0.2}s`, // Adjust delay between cards
+          initial={{ x: "-100vw", opacity: 0 }}
+          animate={
+            hasAnimated ? { x: 0, opacity: 1 } : { x: "-100vw", opacity: 0 } // Keep at initial state if not animated
+          }
+          transition={{
+            duration: 1,
+            delay: index * 0.7, // Stagger animation
           }}
-        />
+        >
+          <Card
+            imageSrc={card.imageSrc}
+            title={card.title}
+            description={card.description}
+          />
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
