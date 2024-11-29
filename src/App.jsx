@@ -13,15 +13,17 @@ import SmartMetering from "./components/aihub/Smartmetering";
 import CustomerPage from "./components/CutomerPage/CustomerPage";
 import ContactUs from "./components/Contact/Contact";
 import Carousel_two from "./components/Carousel_2/Carousel_two";
+import CustomerLogos from "./components/customerlogo/customer";
 const App = () => {
   return (
     <BrowserRouter>
+          <Header />
+
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Header />
               <Carousel_two />
               <IndustryPage />
               <Aihub />
@@ -31,6 +33,7 @@ const App = () => {
               <Ourwork />
               <SmartMetering />
               <Projects />
+              <CustomerLogos />
               <CustomerPage />
             </>
           }

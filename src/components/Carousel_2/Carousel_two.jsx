@@ -9,7 +9,7 @@ const Carousel_two = () => {
         src="/a1.png"
         alt=""
         className="a1"
-        animate={{ left: [180, 300, 250, 100], top: [220, 300, 150, 150] }} // Array of coordinates for movement
+        animate={{ left: [180, 300, 250, 100], top: [220, 300, 150, 150] }}
         transition={{
           duration: 15,
           delay: 0.5,
@@ -97,7 +97,7 @@ const Carousel_two = () => {
         />
       </div>
 
-      {/* <div className="d">
+      <div className="d">
         <motion.img
           src="/d1.png"
           alt=""
@@ -110,7 +110,7 @@ const Carousel_two = () => {
             repeatType: "reverse",
           }}
         />
-      </div> */}
+      </div>
       <div className="carousel-inner-container">
         <div className="carousel-header">
           <h1>

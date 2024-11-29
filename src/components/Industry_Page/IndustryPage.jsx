@@ -6,7 +6,6 @@ const IndustryPage = () => {
   return (
     <div>
       <motion.div className="industry-page" 
-        whileHover={{ backgroundColor: "#000000" }}
       >
         <img src="/wave.png" alt="" />
         <div className="heading d-flex justify-content-between">

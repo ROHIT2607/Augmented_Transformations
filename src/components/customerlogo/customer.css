@@ -1,0 +1,18 @@
+.scrollable-row {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    display: flex;
+    padding:0;
+  }
+  
+  .scrollable-content {
+    display: flex;
+    gap: 2.7rem; /* Adds spacing between images */
+  }
+  
+  .image-wrapper {
+    flex: 0 0 auto; /* Prevents images from resizing or wrapping */
+    text-align: center;
+    width: 150px; /* Adjust width as needed */
+  }
+  
