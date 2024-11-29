@@ -34,7 +34,7 @@ const AIHubSection = () => {
           <h2 className="mt-4 mb-4">E-Commerce Platform</h2>
           <p
             className="mb-4"
-            style={{ textAlign: "justify", marginRight: "110px" }}
+            style={{ textAlign: "justify", marginRight: "110px",zIndex: 5 }}
           >
             Develop an E-Commerce Platform (Web/App). The goal is to sell dairy
             products, beginning with milk. The service entails shipping fresh
@@ -58,6 +58,7 @@ const AIHubSection = () => {
   alt="AI-Hub"
   className="img-fluid"
   style={{
+    zIndex: 0,
     marginLeft: "215px",
     marginTop: "-60px",
     width: "50%",

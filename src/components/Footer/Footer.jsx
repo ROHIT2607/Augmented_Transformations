@@ -137,15 +137,18 @@ const Footer = () => {
                   type="email"
                   placeholder="Email Address"
                   style={{
+                    borderRadius: "25px 0 0 25px", // Rounded input box
                     fontWeight: "300", // Light font weight for the input text
+                    
                   }}
                 />
                 <Button
                   variant="primary"
+                  className="aero-button"
                   style={{
                     backgroundColor: "#4e69db",
                     fontWeight: "300", // Light font weight for button icon if needed
-                    borderRadius: "10px 10px 10px 0",
+          
                   }}
                 >
                   <i className="fa fa-paper-plane" />

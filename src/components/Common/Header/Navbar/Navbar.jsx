@@ -28,9 +28,9 @@ const Navbar = () => {
             >
               <ul className="navbar-nav nav-ul fw-medium">
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
-                    About Us
-                  </a>
+                  <Link to="/" className="nav-link" aria-current="page">
+                  About Us
+                  </Link>
                 </li>
 
                 {/* First Dropdown */}
