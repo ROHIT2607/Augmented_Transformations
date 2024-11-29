@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { motion } from "framer-motion";
 import "./ai.css";
 
 const AIHubSection = () => {
@@ -52,9 +53,30 @@ const AIHubSection = () => {
               <img src="public\Vector (1).png" alt="Right Arrow" />
             </span>
           </Button>
-          <img src="public\Component 54.png" alt="AI-Hub" className="img-fluid" style={{marginLeft:"215px",
-            marginTop:"-70px",width:"50%",height:"40%",objectFit:"cover"
-          }}/>
+          <motion.img
+  src="public/Component 54.png"
+  alt="AI-Hub"
+  className="img-fluid"
+  style={{
+    marginLeft: "215px",
+    marginTop: "-60px",
+    width: "50%",
+    height: "40%",
+    objectFit: "cover",
+    opacity: 0.8, // Lower opacity value for transparency
+  }}
+  animate={{
+    rotate: 360, // Rotate 360 degrees
+    x: [0, 100, 0, -100, 0], // Move right -> top -> left -> bottom -> back to initial position
+    y: [0, -100, 0, 100, 0], // Move down -> left -> up -> right -> back to initial position
+  }}
+  transition={{
+    repeat: Infinity, // Repeat the animation infinitely
+    duration: 8, // Duration for one full cycle (rotation + movement)
+    ease: "linear", // Smooth continuous animation
+  }}
+/>
+
         </Col>
       </Row>
     </Container>
