@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // Import custom CSS for styling (if needed)
+import "./Navbar.css"; 
 
 const Navbar = () => {
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
+          >``
             <span className="navbar-toggler-icon"></span>
           </button>
 
@@ -28,11 +28,10 @@ const Navbar = () => {
             >
               <ul className="navbar-nav nav-ul fw-medium">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link" aria-current="page">
+                  <Link to="/about" className="nav-link" aria-current="page">
                   About Us
                   </Link>
                 </li>
-
                 {/* First Dropdown */}
                 <li className="nav-item dropdown">
                   <a
