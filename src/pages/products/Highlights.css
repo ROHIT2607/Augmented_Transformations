@@ -1,0 +1,39 @@
+/* Title and Highlights */
+.title-heading {
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.1); /* Light color for 'Analytics Solution' */
+    position: relative;
+  }
+  
+  .highlighted-text {
+    color: #00a8ff; /* Blue gradient for Highlights */
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .highlights-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .highlights-list h5 {
+    font-weight: bold;
+    color: red;
+  }
+  
+  .highlights-list p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Right Image Styling */
+  .image-container {
+    text-align: center;
+  }
+  

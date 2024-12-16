@@ -18,10 +18,10 @@ const VASComponent = () => {
         {/* Left Content Section */}
         <div style={{
             position: "absolute",
-            top: "15%",
-            left: "0",
+            top: "-45%",
+            left: "-20%",
           }}>
-            <img src="public\Ellipse0.png" alt="line" />
+            <img src="public\Groupprod.png" alt="line" />
           </div>
           
         <Col md={6} className="p-5 position-relative">

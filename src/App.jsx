@@ -16,6 +16,7 @@ import Carousel_two from "./components/Carousel_2/Carousel_two";
 import CustomerLogos from "./components/customerlogo/customer";
 import AboutUs from "./pages/aboutus/AboutUs";
 import Products from "./pages/products/Products";
+import CobineProd from "./pages/products/CobineProd";
 const App = () => {
   return (
     <BrowserRouter>
@@ -42,7 +43,7 @@ const App = () => {
         />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/products" element={<Products/>}/>
+        <Route path="/products" element={<CobineProd/>}/>
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>
