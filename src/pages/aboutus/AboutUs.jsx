@@ -1,23 +1,46 @@
 import React, { useState } from "react";
+import Offerpage from "./offerpage";
 import "./about.css";
 
 const App = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const panels = [
-    { id: 0, backgroundColor: "#FFCD4B", label: "Vision", imageSrc: "public/imgg1.png", overlayText: "Our Vision: Shaping the future." },
-    { id: 1, backgroundColor: "#FF7676", label: "Mission", overlayText: "Our Mission: Delivering excellence." },
-    { id: 2, backgroundColor: "#FF4B91", label: "Values", overlayText: "Our Values: Integrity and innovation." },
-    { id: 3, backgroundColor: "#0802A3", label: "Innovation", imageSrc: "public/immg2.png", overlayText: "Innovation drives growth." },
+    {
+      id: 0,
+      backgroundColor: "#FFCD4B",
+      label: "Vision",
+      imageSrc: "public/imgg1.png",
+      overlayText: "Our vision is to be the trusted partner in our clients' digital transformation, delivering cutting-edge solutions that drive innovation, efficiency, and growth.",
+    },
+    {
+      id: 1,
+      backgroundColor: "rgba(68, 90, 225, 1)",
+      label: "Mission",
+      overlayText: "Our mission is to create maximum value for our clients by reducing costs and driving efficiency through cutting-edge technologies. We are committed to delivering innovative, sustainable solutions that address current needs while future-proofing businesses in an ever-evolving digital landscape.",
+    },
+    {
+      id: 2,
+      backgroundColor: "rgba(177, 194, 224, 1)",
+      label: "Values",
+      overlayText: "We are dedicated to fostering innovation and excellence, building enduring relationships with our clients and partners rooted in trust, transparency, and shared success. Our commitment is to consistently exceed expectations, delivering exceptional results that propel our clients' businesses to new heights.",
+    },
+    {
+      id: 3,
+      backgroundColor: "#0802A3",
+      label: "Innovation",
+      imageSrc: "public/immg2.png",
+      overlayText: "Innovation drives growth.",
+    },
   ];
 
   return (
     <>
+    <div className="wrapper">
       <div
         className="text-heading container"
         style={{
           display: "block",
-          width: "90vw",
         }}
       >
         <h2>
@@ -34,51 +57,45 @@ const App = () => {
             key={panel.id}
             className={`panel ${activeIndex === index ? "active" : ""}`}
             style={{
-              backgroundColor: panel.imageSrc ? "transparent" : panel.backgroundColor,
-              backgroundImage: panel.imageSrc ? `url(${panel.imageSrc})` : "none",
+              backgroundColor: panel.imageSrc
+                ? "transparent"
+                : panel.backgroundColor,
+              backgroundImage: panel.imageSrc
+                ? `url(${panel.imageSrc})`
+                : "none",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              position: "relative",
-              overflow: "hidden",
             }}
             onClick={() => setActiveIndex(index)}
           >
             {/* Dark Overlay for Image Background */}
-            {panel.imageSrc && activeIndex === index && (
+            {panel.imageSrc && (
               <div
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  zIndex: 1,
-                }}
+                className={`overlay ${
+                  activeIndex === index ? "active-overlay" : ""
+                }`}
               />
             )}
             {/* Text Overlay */}
             {activeIndex === index && (
-              <div
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  color: "#fff",
-                  textAlign: "center",
-                  zIndex: 2,
-                  fontSize: "1.5rem",
-                  padding: "10px",
-                }}
-              >
-                {panel.overlayText}
-              </div>
+              <div className="overlay-text">{panel.overlayText}</div>
             )}
-            <h3 style={{ position: "relative", zIndex: 3 }}>{panel.label}</h3>
+            {/* Label */}
+            <div
+              className={`label ${activeIndex === index ? "label-active" : ""}`}
+            >
+              <span className="label-number">{`0${panel.id + 1}`}</span>
+              <span className="label-text">{panel.label}</span>
+            </div>
           </div>
         ))}
       </div>
+      <div class="line-container">
+        <div class="line short"></div>
+        <div class="line long"></div>
+      </div>
+    </div>
+    <Offerpage />
     </>
   );
 };
