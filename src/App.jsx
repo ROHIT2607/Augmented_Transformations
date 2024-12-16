@@ -15,6 +15,7 @@ import ContactUs from "./components/Contact/Contact";
 import Carousel_two from "./components/Carousel_2/Carousel_two";
 import CustomerLogos from "./components/customerlogo/customer";
 import AboutUs from "./pages/aboutus/AboutUs";
+import Products from "./pages/products/Products";
 const App = () => {
   return (
     <BrowserRouter>
@@ -41,8 +42,9 @@ const App = () => {
         />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/products" element={<Products/>}/>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 };
