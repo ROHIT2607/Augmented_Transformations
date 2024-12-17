@@ -18,6 +18,7 @@ import AboutUs from "./pages/aboutus/AboutUs";
 import Products from "./pages/products/Products";
 import CobineProd from "./pages/products/CobineProd";
 import ServiceCom from "./pages/services/ServiceCom";
+import Success from "./pages/sucessstories/Success";
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/products" element={<CobineProd/>}/>
         <Route path="/services" element={<ServiceCom/>} />
+        <Route path="stories" element={<Success/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
