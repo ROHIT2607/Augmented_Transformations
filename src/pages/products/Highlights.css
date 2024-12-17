@@ -21,19 +21,27 @@
     padding: 0;
   }
   
-  .highlights-list h5 {
-    font-weight: bold;
-    color: red;
-  }
-  
-  .highlights-list p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Right Image Styling */
-  .image-container {
-    text-align: center;
-  }
-  
+
+
+/* Bullet Points Style */
+.highlights-list {
+  list-style-type: disc; 
+  padding-left: 20px; 
+}
+
+.highlights-list li::marker {
+  color: rgba(192, 63, 70, 1); 
+  font-size: 1.5em; 
+  line-height: 4; 
+
+}
+
+.highlights-list h5 {
+  color: rgba(192, 63, 70, 1);
+  font-weight: 600;
+}
+
+.highlights-list p {
+  color: #333; 
+}
+

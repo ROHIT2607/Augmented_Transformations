@@ -46,7 +46,7 @@
     width: 30px;  /* Adjust size of the circle */
     height: 30px;
     background-color: white;  /* White background for the circle */
-    border-radius: 50%;  /* Make the element a circle */
+    border-radius: 50%;  
     display: flex;
     justify-content: center;
     align-items: center;
