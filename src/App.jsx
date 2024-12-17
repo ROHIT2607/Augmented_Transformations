@@ -17,6 +17,8 @@ import CustomerLogos from "./components/customerlogo/customer";
 import AboutUs from "./pages/aboutus/AboutUs";
 import Products from "./pages/products/Products";
 import CobineProd from "./pages/products/CobineProd";
+import ServiceCom from "./pages/services/ServiceCom";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -44,6 +46,7 @@ const App = () => {
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/products" element={<CobineProd/>}/>
+        <Route path="/services" element={<ServiceCom/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

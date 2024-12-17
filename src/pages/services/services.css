@@ -1,0 +1,27 @@
+/* ai.css or your custom CSS file */
+.half-gradient-text {
+    background: linear-gradient(to right, rgba(95, 45, 238, 1) 50%, rgba(14, 226, 246, 1) 50%);
+    -webkit-background-clip: text;  /* For Safari */
+    background-clip: text;  /* For other browsers */
+    color: transparent;  /* Makes the text transparent to show the gradient */
+  }
+  
+  /* ai.css or your custom CSS file */
+.rectangle {
+    margin-top: 7px;
+    width: 33px;
+    height: 5px;
+    background-color: rgba(193, 53, 35, 1);
+    border-radius: 20px;
+  }
+  
+  /* ai.css or your custom CSS file */
+.rotated-heading {
+    font-size: 3rem;  /* Increase the font size */
+    color: lightgray;  /* Set the text color to light gray */
+    transform: rotate(270deg);  /* Rotate the element by 90 degrees */
+    display: inline-block;  /* Prevent it from disrupting other elements */
+    margin-top: 20px;  /* Optional: Add some margin if needed */
+    position: absolute;
+  }
+  
