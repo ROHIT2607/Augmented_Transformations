@@ -45,7 +45,7 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/products" element={<CobineProd/>}/>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 };
