@@ -86,7 +86,8 @@ const App = () => {
     >
       <div
         style={{
-          marginLeft: "2%",
+          marginLeft: "4%",
+          marginRight: "7%",
         }}
       >
         <h2
@@ -97,6 +98,7 @@ const App = () => {
             WebkitTextFillColor: "transparent",
             fontWeight: "bold",
             marginBottom: "20px",
+
           }}
         >
           Mobile app development team:
