@@ -12,7 +12,7 @@ const AppDev = () => {
         color: "white",
         padding: "0",
         margin: "0",
-        position: "relative", // Ensure the container is relative for positioning child elements
+        position: "relative", 
       }}
     >
       {/* Rotated Heading */}
@@ -20,17 +20,17 @@ const AppDev = () => {
         className="rotated-heading"
         style={{
           position: "absolute",
-          top: "43%", // Adjust the position of the rotated text
-          left: "5%", // Adjust the horizontal positioning
-          transform: "translateX(-50%) rotate(270deg)", // Rotate text by 270 degrees
-          zIndex: 2, // Ensure rotated heading is above the image
-          fontSize: "3.7rem", // Large font size for the heading
-          fontWeight: "bold", // Add bold weight to the text
+          top: "43%", 
+          left: "5%",
+          transform: "translateX(-50%) rotate(270deg)",
+          zIndex: 2, 
+          fontSize: "3.7rem",
+          fontWeight: "bold", 
           background:
             "linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)", // Gradient for opacity effect
-          WebkitBackgroundClip: "text", // This clips the background to text in WebKit browsers
-          backgroundClip: "text", // Standard support for background clip on text
-          color: "transparent", // Set color to transparent to show the gradient
+          WebkitBackgroundClip: "text",
+          backgroundClip: "text", 
+          color: "transparent",
         }}
       >
         Mobile App Development
