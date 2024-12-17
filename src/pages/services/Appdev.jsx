@@ -20,11 +20,17 @@ const AppDev = () => {
         className="rotated-heading"
         style={{
           position: "absolute",
-          top: "42%",  // Adjust the position of the rotated text
-          left: "5%",  // Center the rotated text horizontally
-          transform: "translateX(-50%) rotate(270deg)", // Center and rotate the text 90 degrees
-          zIndex: 2, // Make sure the rotated heading is above the image
-          fontSize: "4rem", // Large font size for the heading
+          top: "43%", // Adjust the position of the rotated text
+          left: "5%", // Adjust the horizontal positioning
+          transform: "translateX(-50%) rotate(270deg)", // Rotate text by 270 degrees
+          zIndex: 2, // Ensure rotated heading is above the image
+          fontSize: "3.7rem", // Large font size for the heading
+          fontWeight: "bold", // Add bold weight to the text
+          background:
+            "linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)", // Gradient for opacity effect
+          WebkitBackgroundClip: "text", // This clips the background to text in WebKit browsers
+          backgroundClip: "text", // Standard support for background clip on text
+          color: "transparent", // Set color to transparent to show the gradient
         }}
       >
         Mobile App Development
@@ -61,13 +67,13 @@ const AppDev = () => {
           </h2>
 
           <p>
-            Augmented Transformations has a strong inbuilt team for developing and
-            managing mobile app development.
+            Augmented Transformations has a strong inbuilt team for developing
+            and managing mobile app development.
           </p>
           <p className="mb-4">
             We handle custom app development, product development, and
-            pre-developed apps on various technologies like Android Studio, React,
-            and iOS. Our team specializes in creating tailor-made mobile
+            pre-developed apps on various technologies like Android Studio,
+            React, and iOS. Our team specializes in creating tailor-made mobile
             applications that align perfectly with your vision, brand, and
             target audience. Whether you need an Android, iOS, or cross-platform
             app, our developers have the skills and experience to bring your
