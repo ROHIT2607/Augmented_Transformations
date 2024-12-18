@@ -11,12 +11,12 @@ const Success = () => {
           color: "#000",
           fontSize: "30px",
           padding: "20px",
-          fontFamily: "Poppins, sans-serif",
-          fontWeight: "600",
+          fontFamily: "Poppins",
+          fontWeight: "200",
           position: "relative",
         }}
       >
-        Fostering Innovation: Stories of Technological Transformation
+        Fostering Innovation: Stories of Technological <br /> Transformation
       </h2>
 
       {/* Centered Image */}
@@ -40,7 +40,7 @@ const Success = () => {
         >
           {/* Image with Bottom Cut */}
           <img
-            src="public\winnersssFI.png"
+            src="public\fiiinal.png"
             alt="Success Stories"
             style={{
               display: "block",
@@ -55,7 +55,7 @@ const Success = () => {
         <div
           style={{
             position: "absolute",
-            bottom: "-17px", // Adjust to place the circle slightly overlapping
+            bottom: "-10px",
             left: "50%",
             width: "30px",
             height: "30px",
@@ -66,14 +66,15 @@ const Success = () => {
           }}
         ></div>
       </div>
-        
-        {/* Vertical Steps */}
-        <div style={{
-            position: "relative",
-        }}>
-        <VerticalSteps />
-        </div>
 
+      {/* Vertical Steps */}
+      <div
+        style={{
+          position: "relative",
+        }}
+      >
+        <VerticalSteps />
+      </div>
     </>
   );
 };
