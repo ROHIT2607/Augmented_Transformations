@@ -13,7 +13,7 @@ const VerticalSteps = () => {
       }}
     >
       {/* Main Container */}
-      <div style={{ position: "relative", width: "600px" }}>
+      <div style={{ position: "relative", width: "900px" }}>
         {/* Vertical Dotted Line */}
         <div style={verticalLineStyle}></div>
 
@@ -129,7 +129,7 @@ const VerticalSteps = () => {
 // Styles
 const verticalLineStyle = {
   position: "absolute",
-  top: 0,
+  top: "-2%",
   bottom: 0,
   left: "50%",
   borderLeft: "2px dotted white",
@@ -138,14 +138,14 @@ const verticalLineStyle = {
 
 const boxWrapperStyle = {
   display: "flex",
-  margin: "30px 0",
+  margin: "20px 0",
   position: "relative",
 };
 
 const boxStyle = {
   backgroundColor: "#2A2A2A",
   borderRadius: "8px",
-  width: "100%",
+  width: "70%",
   zIndex: 1,
 };
 

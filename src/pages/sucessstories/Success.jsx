@@ -26,7 +26,6 @@ const Success = () => {
           justifyContent: "center",
           alignItems: "center",
           position: "relative",
-          overflow: "hidden", // Hide any overflowing content
         }}
       >
         {/* Container for the Cut Image */}
@@ -35,17 +34,19 @@ const Success = () => {
             position: "relative",
             width: "fit-content",
             height: "90%", // Set the visible portion to 90% of the image height
+            alignItems: "center",
+            textAlign: "center",
           }}
         >
           {/* Image with Bottom Cut */}
           <img
-            src="public\winner.png"
+            src="public\winnersssFI.png"
             alt="Success Stories"
             style={{
               display: "block",
               width: "100%",
               height: "80%",
-              clipPath: "inset(0 0 10% 0)", // Cuts 10% from the bottom of the image
+              objectFit: "cover",
             }}
           />
         </div>
@@ -56,17 +57,23 @@ const Success = () => {
             position: "absolute",
             bottom: "-17px", // Adjust to place the circle slightly overlapping
             left: "50%",
-            transform: "translateX(-50%)", // Center the circle horizontally
             width: "30px",
             height: "30px",
             borderRadius: "50%", // Makes it a circle
-            backgroundColor: "black",
+            backgroundColor: "white",
             zIndex: "10", // Ensures it's above the image
+            transform: "translateX(-50%)", // Center the circle
           }}
         ></div>
       </div>
+        
+        {/* Vertical Steps */}
+        <div style={{
+            position: "relative",
+        }}>
+        <VerticalSteps />
+        </div>
 
-      <VerticalSteps />
     </>
   );
 };
