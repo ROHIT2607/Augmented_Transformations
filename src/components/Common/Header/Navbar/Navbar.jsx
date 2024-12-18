@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; 
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -15,12 +15,17 @@ const Navbar = () => {
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >``
+          >
+            ``
             <span className="navbar-toggler-icon"></span>
           </button>
 
           <div className="navbar-content d-flex justify-content-between w-100">
-            <img src="/ATLogo.jpg" className="imageSize d-none d-md-block" alt="Logo" />
+            <img
+              src="/ATLogo.jpg"
+              className="imageSize d-none d-md-block"
+              alt="Logo"
+            />
 
             <div
               className="collapse navbar-collapse justify-content-center"
@@ -29,7 +34,7 @@ const Navbar = () => {
               <ul className="navbar-nav nav-ul fw-medium">
                 <li className="nav-item">
                   <Link to="/about" className="nav-link" aria-current="page">
-                  About Us
+                    About Us
                   </Link>
                 </li>
                 {/* First Dropdown */}
@@ -78,9 +83,12 @@ const Navbar = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      {/* <a className="dropdown-item" href="#">
                         Option 1
-                      </a>
+                      </a> */}
+                      <Link to="/services" className="dropdown-item">
+                        Services
+                      </Link>
                     </li>
                     <li>
                       <a className="dropdown-item" href="#">
@@ -96,9 +104,9 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/stories" className="nav-link">
                     Success Stories
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
