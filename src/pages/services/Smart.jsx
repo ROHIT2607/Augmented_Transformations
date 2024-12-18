@@ -8,7 +8,6 @@ const Smart = () => {
           position: "relative",
           height: "100vh",
           backgroundColor: "#f0f0f0",
-          overflow: "hidden",
         }}
       >
         {/* "Smarter" in the Top Left */}
@@ -33,7 +32,7 @@ const Smart = () => {
           alt="Smart"
           style={{
             position: "absolute",
-            top: "-40%", // Adjust image overlap upwards
+            top: "-47%", // Adjust image overlap upwards
             left: "0%", // Left aligned
             width: "100%", // Full width
             zIndex: 1, // Keep it below the text

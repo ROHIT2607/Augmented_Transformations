@@ -25,20 +25,47 @@ const Success = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "20px",
           position: "relative",
+          overflow: "hidden", // Hide any overflowing content
         }}
       >
-        <img
-          src="/winner.png" 
-          alt="Success Stories"
+        {/* Container for the Cut Image */}
+        <div
           style={{
-            maxWidth: "100%", 
-            height: "auto",
-            objectFit: "contain",
+            position: "relative",
+            width: "fit-content",
+            height: "90%", // Set the visible portion to 90% of the image height
           }}
-        />
+        >
+          {/* Image with Bottom Cut */}
+          <img
+            src="public\winner.png"
+            alt="Success Stories"
+            style={{
+              display: "block",
+              width: "100%",
+              height: "80%",
+              clipPath: "inset(0 0 10% 0)", // Cuts 10% from the bottom of the image
+            }}
+          />
+        </div>
+
+        {/* Small Black Circle */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-17px", // Adjust to place the circle slightly overlapping
+            left: "50%",
+            transform: "translateX(-50%)", // Center the circle horizontally
+            width: "30px",
+            height: "30px",
+            borderRadius: "50%", // Makes it a circle
+            backgroundColor: "black",
+            zIndex: "10", // Ensures it's above the image
+          }}
+        ></div>
       </div>
+
       <VerticalSteps />
     </>
   );
